@@ -1,0 +1,16 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+footer {
+    background: #728C69;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+.brand {
+    background: none !important;
+    color: #3A5311;
+}
+.brand-text {
+    color: #3A5311 !important;
+}

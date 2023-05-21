@@ -16,7 +16,7 @@
         </style>
 
     </head>
-    <body class="grey lighten-4">
+    <body class="grey lighten-4" id="header">
         <nav class="white z-depth-0">
             <div class="container">
                 <a href="#" class="brand-logo brand-text">SWS</a>
@@ -28,6 +28,7 @@
             </div>
         </nav>
         @yield('admin_dashboard')
+        @yield('admin_stockrooms')
 
     <footer>
         Copyright 2023 SwiftWare Warehousing Solutions

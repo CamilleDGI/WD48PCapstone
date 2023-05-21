@@ -14,3 +14,9 @@ footer {
 .brand-text {
     color: #3A5311 !important;
 }
+
+.title {
+    font-size: 30px;
+    align-items: center;
+}
+

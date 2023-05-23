@@ -29,6 +29,7 @@
         </nav>
         @yield('admin_dashboard')
         @yield('admin_stockrooms')
+        @yield('admin_perstockroom')
 
     <footer>
         Copyright 2023 SwiftWare Warehousing Solutions

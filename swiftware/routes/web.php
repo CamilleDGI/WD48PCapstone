@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use StockroomController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,5 +21,5 @@ Route::get('/admin', function () {
     return view('admin');
 });
 
-Route::get('/admin/stockrooms', 'StockroomController@index');
-Route::get('/admin/stockrooms/{stockroom_number}', 'StockroomController@show');
+Route::get('/admin/stockrooms', [App\Http\Controllers\StockroomController::class, 'index']);
+Route::get('/admin/stockrooms/{stockroom_number}', [App\Http\Controllers\StockroomController::class, 'show']);

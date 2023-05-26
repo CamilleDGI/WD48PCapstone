@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use StockroomController;
+use App\Http\Controllers\StockroomController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes

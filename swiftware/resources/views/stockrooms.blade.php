@@ -6,7 +6,7 @@
         <div class="title m-b-md">
             Stockroom List
         </div>
-        
+        <div class="row">
         <!-- @for($i = 0; $i < count($stockrooms); $i++)
             <p>{{ $stockrooms[$i]['stockroom_number'] }}</p>
         @endfor -->
@@ -24,6 +24,7 @@
                 </div>
             </div>
         @endforeach
+    </div>
     </div>
 </div>
 

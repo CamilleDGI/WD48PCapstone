@@ -3,24 +3,26 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Stockroom;
 
 class StockroomController extends Controller
 {
     public function index(){
         
-        $stockrooms = [
-            ['stockroom_number' => 'B_001','status' => 'Active','customer' => 'ABC Company'],
-            ['stockroom_number' => 'B_002','status' => 'Open','customer' => ''],
-            ['stockroom_number' => 'B_003','status' => 'Active','customer' => 'XYZ Company'],
-            ['stockroom_number' => 'B_004','status' => 'Open','customer' => ''],
-            ['stockroom_number' => 'B_005','status' => 'Under Maintenance','customer' => ''],
-            ['stockroom_number' => 'B_006','status' => 'Open','customer' => '']
-        ];
+        $stockrooms = Stockroom::all();
 
-            return view('stockrooms', ['stockrooms' => $stockrooms]);
+        return view('stockroom.stockrooms', ['stockrooms' => $stockrooms]);
     }
 
-    public function show($stockroom_number){
-        return view('perstockroom', ['stockroom_number'=> $stockroom_number]);
+    public function show($id){
+
+        $stockroom = Stockroom::findOrFail($id);
+
+        return view('stockroom.perstockroom', ['stockroom'=> $stockroom]);
     }
+
+    public function create(){
+        return view('stockroom.create');
+    }
+
 }

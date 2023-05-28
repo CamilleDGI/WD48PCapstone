@@ -22,4 +22,5 @@ Route::get('/admin', function () {
 });
 
 Route::get('/admin/stockrooms', [App\Http\Controllers\StockroomController::class, 'index']);
+Route::get('/admin/stockrooms/create', [App\Http\Controllers\StockroomController::class, 'create']);
 Route::get('/admin/stockrooms/{stockroom_number}', [App\Http\Controllers\StockroomController::class, 'show']);

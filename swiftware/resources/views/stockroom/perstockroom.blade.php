@@ -1,10 +1,12 @@
 @extends('layouts.layouts')
 
-@section('admin_perstockroom')
+@section('content')
 <div class="relative flex items-top justify-center full-height">
     <div class="content">
         <div class="title m-b-md">
-            Stockroom - {{$stockroom_number}}
+            <h1>Stockroom - {{$stockroom->name}}</h1>
+            <p>Status - {{$stockroom->is_active}}</p>
+            <a href="#">Return</a>
         </div>
 
     </div>

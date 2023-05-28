@@ -16,7 +16,7 @@ class CreateStockroomsTable extends Migration
         Schema::create('stockrooms', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->boolean('available');
+            $table->boolean('is_active')->default(false);
             $table->integer('capacity');
             $table->string('unit_of_measurement');
             $table->timestamps();

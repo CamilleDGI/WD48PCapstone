@@ -25,4 +25,19 @@ class StockroomController extends Controller
         return view('stockroom.create');
     }
 
+    public function store() {
+
+        $stockroom = new Stockroom();
+
+
+            $stockroom-> name = request('name');
+            $stockroom-> capacity = request('capacity');
+            $stockroom-> unit_of_measurement = request('unit_of_measurement');
+            $stockroom-> is_active = request()->has('is_active');
+
+            $stockroom-> save();
+
+        return redirect('/admin/stockrooms');
+    }
+
 }

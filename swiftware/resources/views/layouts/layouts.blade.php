@@ -20,7 +20,7 @@
     <body class="grey lighten-4" id="header">
         <nav class="white z-depth-0">
             <div class="container">
-                <a href="#" class="brand-logo brand-text">SWS</a>
+                <a href="#" class="brand-logo brand-text"><img class="w-10 h-10" src="/public/assets/SWS LOGO" alt="avatar"/></a>
                 <ul id="nav-mobile" class="right hide-on-small-and-down">
                     <li><a href="#" class="btn brand z-depth-0">Stockroom</a></li>
                     <li><a href="#" class="btn brand z-depth-0">Customer</a></li>
